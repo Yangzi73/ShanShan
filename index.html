@@ -2,22 +2,31 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<!-- 引入css -->
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/other.css" />
+		<!-- 标题 -->
 		<title>猪八珊和猪八洋</title>
 	<head>
 				
 			<body>
+
 			<div align = "center">
+				<!-- 获取QQ头像代码 -->
+				<!-- 两个头像，居中 -->
 				<img  src="http://q.qlogo.cn/headimg_dl?dst_uin=1962658484&spec=640&img_type=jpg" alt="Shan" width="100" height="100">
 				<img  src="http://q.qlogo.cn/headimg_dl?dst_uin=1142190666&spec=640&img_type=jpg" alt="Yang" width="100" height="100">
-			</div>	
+			</div>
+
+			<!-- 标题文字 -->
 			<h1 id="today">今天是</h1>
 			<h1 id="ooo">猪八珊和猪八洋<br>在一起的</h1>
 			<h1 id="days"></h1>
 			<h1 id="ymd"></h1>
 			
+			<!-- 时间计算器 -->
 			<script>
+				// 计算秒数
 				function after(){
 						var date = new Date(); 
 						var date1 = new Date("12/05/2020"); 
@@ -26,7 +35,7 @@
 						document.getElementById("ymd").innerHTML = ("<br>第" + parseInt(Difference_In_Days) + "秒"); 
 					}
 					setInterval("after()",1000);
-					
+				// 计算天数
 				function after1(){
 						var date = new Date(); 
 						var date1 = new Date("12/05/2020"); 
@@ -36,7 +45,9 @@
 					}
 					after1();
 			</script>
+
 			</body>
+			<!-- 爱心动画 -->
 			<body>
 					<h1 id = "The1">❤For You Forever❤</h1>
 					<div class="wrapper">
@@ -47,6 +58,7 @@
 					  <input type="checkbox" id="ck3"/>
 					  <label for="ck3">❤</label>
 					</div>
+					<!-- 提示 -->
 					<span>点击你的臭屁名字</span>
 			</body>
 </html>
